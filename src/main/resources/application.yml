@@ -1,0 +1,50 @@
+##############################################
+#           Spring Configuration           #
+##############################################
+
+spring:
+  profiles:
+    active: prod
+
+##############################################
+#            Server Configuration            #
+##############################################
+server:
+  port: 7000
+  error:
+    include-message: always
+
+logging:
+  level:
+    web: DEBUG #for additional information
+
+springdoc:
+  api-docs:
+    path: /api-docs
+    title: API Documentation
+    description: API Documentation
+
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+
+##############################################
+#           Database Configuration           #
+##############################################
+
+#spring:
+#  profiles:
+#    active: prod
+
+
+#############################################
+#         jwt key generator
+#############################################
+jwt:
+  secret: jwtoverlord
+
+
+email:
+  username: maverick
+  password: subversion7$x
+
